@@ -10,7 +10,7 @@ app = FastAPI(
 )
 
 try:
-    model = joblib.load('venv/anormallik_modeli.pkl' )
+    model = joblib.load('anormallik_modeli.pkl' )
     print("🤖 Makine Öğrenmesi Modeli başarıyla hafızaya yüklendi!")
 except Exception as e:
     print(f"❌ Model yüklenirken hata oluştu: {e}")
